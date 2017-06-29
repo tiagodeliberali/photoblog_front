@@ -1,6 +1,8 @@
 (function() {
     'use strict';
 
+    var baseUrl = 'http://www.tiagophotoblog.com.br';
+
     angular
         .module('photoBlogApp')
         .service('dataService', dataService);
@@ -17,35 +19,35 @@
         };
 
         function getPostsByCategory(id, updatePostsByCategory) {
-            $http.get('/api/datacategories/' + id)
+            $http.get(baseUrl + '/api/datacategories/' + id)
                 .success(function (response) {
                     updatePostsByCategory(response.posts);
                 });
         }
 
         function getCategory(id, updatePostsByCategory) {
-            $http.get('/api/datacategories/' + id)
+            $http.get(baseUrl + '/api/datacategories/' + id)
                 .success(function (response) {
                     updatePostsByCategory(response);
                 });
         }
 
         function getPost(id, updatePost) {
-            $http.get('/api/dataposts/' + id)
+            $http.get(baseUrl + '/api/dataposts/' + id)
                 .success(function (response) {
                     updatePost(response);
                 });
         };
 
         function getPosts(updatePosts) {
-            $http.get('/api/dataposts')
+            $http.get(baseUrl + '/api/dataposts')
                 .success(function (response) {
                     updatePosts(response);
                 });
         }
 
         function getCategories(updateCategories) {
-            $http.get('/api/datacategories')
+            $http.get(baseUrl + '/api/datacategories')
                 .success(function (response) {
                     updateCategories(response);
                 });
