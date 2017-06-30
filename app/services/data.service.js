@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    var baseUrl = 'http://www.tiagophotoblog.com.br';
+    var baseUrl = 'http://api.tiagophotoblog.com.br';
 
     angular
         .module('photoBlogApp')
