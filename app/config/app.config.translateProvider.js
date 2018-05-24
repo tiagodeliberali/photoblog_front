@@ -44,7 +44,7 @@
                 BLOGTITLE: 'Retratos',
                 BLOGDESCRIPTION: 'Retratos que inspiram',
                 ABOUTME: 'Sobre',
-                ABOUTMEDESCRIPTION: 'Meu nome é Tiago Santos e sou fotógrafo, apaixonado por retratos e poesia da fotografia.',
+                ABOUTMEDESCRIPTION: 'Meu nome é Tiago Santos e sou fotógrafo, apaixonado por retratos e paisagens urbanas.',
                 CATEGORIES: 'Categorias',
                 FOLLOWME: 'Siga-me',
                 RECENTPOSTS: 'Posts Recentes',
